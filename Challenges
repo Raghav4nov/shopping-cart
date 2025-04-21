@@ -1,0 +1,32 @@
+1. Setting Up the Project
+Vite + React Configuration: Initially struggled with setting up Vite 
+
+Tailwind CSS Integration: Had issues with PostCSS configuration until I followed the docs carefully.
+
+2. State Management
+Context API Confusion: Understanding useReducer with CartContext was tricky—especially updating state immutably.
+
+Prop Drilling: Initially passed props too deeply before realizing Context was the solution.
+
+3. Cart Modal Issues
+Portal Not Rendering: Forgot to add the <div id="modal"></div> in index.html.
+
+Dialog Not Opening: Debugged for hours before realizing cartIsVisible state wasn’t updating properly.
+
+4. Data Fetching
+Firebase Frustration: API calls failed due to CORS/network errors, so switched to local JSON.
+
+JSON Import Paths: Initially used wrong relative paths
+
+5. Deployment Problems
+Blank GitHub Pages: Forgot the base: '/repo-name/' in vite.config.js.
+
+Broken Styles: Tailwind classes didn’t load in production until I rebuilt with npm run build.
+
+6. Responsive Design
+Mobile Layout: Cart modal overflowed on small screens—fixed with max-width and viewport units.
+
+Key Lessons Learned
+✔ Always check the DOM: Use React DevTools to debug state/portal issues.
+✔ Start simple: Local JSON > Firebase for beginners.
+✔ Read errors carefully: Most solutions were in the console logs!
